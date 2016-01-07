@@ -34,7 +34,7 @@ void formatDate(DATE date, char *buf)
             << setw(2) << setfill('0') << tmBuf.tm_min << ":" \
             << setw(2) << setfill('0') << tmBuf.tm_sec;
     strcpy(buf, sstream.str().c_str());
-}
+};
 
 IO2GOfferRow *getOffer(IO2GSession *session, const char *sInstrument)
 {
